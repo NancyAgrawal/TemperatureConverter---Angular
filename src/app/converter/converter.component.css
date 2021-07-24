@@ -1,0 +1,116 @@
+.outer {
+  background-color: white;
+  min-height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 8px 5px #32576d;
+  color: rgb(128, 128, 128);
+  padding: 20px 60px;
+  width: 50vw;
+  display: flex;
+  margin: 25px auto;
+  flex-direction: column;
+}
+
+h1 {
+  color: #659dbd;
+  margin: 8px auto 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+button {
+  text-align: center;
+  font-size: 1em;;
+  padding: 0.8em;
+  min-width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #659dbd;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  flex: 1;
+  margin-left: 2em;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+button:hover {
+  background-color: #32576d;
+}
+
+input,
+select {
+  padding: 0 8px;
+  font-size: 1em;
+  height: 1.8em;
+  margin: 8px 0;
+  cursor: pointer;
+  color: black;
+}
+
+input {
+  margin-right: 20px;
+  cursor: text;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  flex: 1;
+}
+
+#ans{
+  color: black;
+  font-weight: bold;
+  margin: 8px 0;
+  font-size: 1.2em;
+}
+
+@media all and (max-width: 1200px) {
+  
+  .outer {
+    /* padding: 30px; */
+    width: 60vw;
+  }
+
+  input,
+  select {
+    margin: 8px 0;
+  }
+  input {
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 970px) {
+  form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .outer {
+    padding: 30px;
+    width: 65vw;
+  }
+
+  button {
+    margin: 10px;
+    align-self: center;
+  }
+
+  input {
+    margin: 5px 0 20px;
+  }
+
+  select {
+    margin-bottom: 20px;
+  }
+}

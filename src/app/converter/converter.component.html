@@ -1,0 +1,29 @@
+<div class="outer">
+  <h1>{{ title}}</h1>
+
+  <form>
+    <div class="form-element">
+      <label for="input_tmp">Degrees</label>
+      <input name="input_tmp" value={{input_tmp}} [(ngModel)]="input_tmp" placeholder="0" type="number">
+    </div>
+
+    <div class="form-element">
+      <label for="type_tmp">Type</label>
+      <select name="type_tmp" #type_tmp>
+      <option value="0">Celsius</option>
+      <option value="1">Fahrenheit</option>
+    </select>
+    </div>
+
+    <button (click)="convert(type_tmp.value)">Convert</button>
+  </form>
+
+  <div>
+    <p>Result</p>
+    <p id="ans">{{output_tmp.toPrecision(3)}}° <span *ngIf='output_type==="1"'>F</span>
+      <span *ngIf='output_type==="0"'>C</span>
+    </p>
+  </div>
+
+
+</div>
