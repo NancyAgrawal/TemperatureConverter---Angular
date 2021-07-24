@@ -1,4 +1,4 @@
-# Temperatur Converter
+# Temperature Converter
 
 [Project Found on 👀](https://www.codementor.io/projects/web/temperature-converter-website-atx32dy7mf)
 
