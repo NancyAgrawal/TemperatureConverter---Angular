@@ -1,7 +1,7 @@
 # Temperature Converter 🌡️
 
 A simple app to convert temperatures from Celsius to Fahrenheit, and vice-versa.
-Input a temperature in either Fahrenheit or Celsius and press a "convert" button. The converted temperature will then be displayed with the correct unit.
+(Input a temperature in either Fahrenheit or Celsius and press a "convert" button. The converted temperature will then be displayed with the correct unit.)
 
 ### What I've learned? 🎓
 - Creating components
